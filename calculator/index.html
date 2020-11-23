@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../calculator/style.css">
+    <script src="../calculator/code.js"></script>
+
+    <title>Calculator</title>
+</head>
+<body>
+    <form name="Form">
+        <div class="calculator">
+            <div class="input">
+                <p id="_input"></p>
+            </div>
+            <div class="grid">
+                <div class="elem"><button type="button" onclick="updateScreen(1)">1</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(2)">2</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(3)">3</button></div>
+                <div class="elem special" id="+"><button type="button" onclick="cleanScreen(1)">+</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(4)">4</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(5)">5</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(6)">6</button></div>
+                <div class="elem special" id="-"><button type="button" onclick="cleanScreen(2)">-</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(7)">7</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(8)">8</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(9)">9</button></div>
+                <div class="elem special" id="x"><button type="button" type="button" onclick="cleanScreen(3)">x</button></div>
+                <div class="elem special" id="c"><button type="button" onclick="cleanScreen(5)">c</button></div>
+                <div class="elem"><button type="button" onclick="updateScreen(0)">0</button></div>
+                <div class="elem special" id="="><button type="button" onclick="calculate()">=</button></div>
+                <div class="elem special" id="/"><button type="button" onclick="cleanScreen(4)">/</button></div>
+            </div>
+    </form>
+
+</body>
+</html>
