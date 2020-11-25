@@ -1,19 +1,20 @@
 "use strict"
 
-var currentNumber;
+var currentNumber = 0;
 var memory;
 var op;
 
 function updateScreen(num) {
 
-    currentNumber = num;
-    document.getElementById('_input').innerHTML=num
+    currentNumber = currentNumber* 10  + num;
+    document.getElementById('_input').innerHTML=currentNumber;
 }
 
 function cleanScreen(operand) {
     memory = currentNumber;
-    document.getElementById('_input').innerHTML=" ";
+    currentNumber = 0; 
     op=operand;
+    document.getElementById('_input').innerHTML=" ";
 
 }
 function calculate(){
